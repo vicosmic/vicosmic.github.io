@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spirit Selfie</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!-- <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> -->
+    </head>
+
+<body>
+
+  <div class="callout large primary">
+    <div class="row column text-center">
+      <h1>#Spirit Selfie</h1>
+      <!-- <h2 class="subheader"></h2> -->
+      <p>
+      Take a picture and see the spirits around you.<br/>
+      For this to work, open in mozilla firefox browser and allow the page to access your webcam.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <canvas id="canvas">
+      </canvas>
+      <div class="output" id="hidden">
+        <div class="images"></div>
+          <img id="photo" alt="Image Captured.">
+      </div>
+      <div class="blog-post">
+        <div class="camera" id="display">
+          <video id="video">Camera Stream is Not Available.</video>
+          <button id="startbutton">Capture Image</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
+
+</body>
+
+</html>
