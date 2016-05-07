@@ -14,7 +14,7 @@ body {
   display: none;
 }
 .camera {
-  width:1000px;
+  width:787px;
   display: inline-block;
 }
 #hidden {
@@ -50,14 +50,10 @@ body {
   width: 100%;
 }
 
-.photoOne {
-  /*filter: url(../img/filters/ghost01.svg);*/
+#photo {
+  width: 787px;
 }
 
-.images {
-  background: url("../img/filters/ghost01.png");
-  width: 1000px;
-  height: 751px;
-  opacity: 0.75;
-  position: absolute;
+.photoOne {
+  /*filter: url(../img/filters/ghost01.svg);*/
 }

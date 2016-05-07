@@ -388,7 +388,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 787px;
   height: auto;
   -ms-interpolation-mode: bicubic;
   display: inline-block;
@@ -434,7 +435,10 @@ button {
 .row {
   max-width: 75rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
   .row::before, .row::after {
     content: ' ';
     display: table; }
@@ -4153,3 +4157,16 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+footer {
+  border-top: 2px solid rgb(224, 147, 47);
+  background-image: url(../img/background-image.jpg);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: inherit;
+  max-height: 80px;
+  min-height: 25px;
+  color: white;
+  margin: 0 auto;
+}
