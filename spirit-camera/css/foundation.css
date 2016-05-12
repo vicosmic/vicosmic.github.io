@@ -438,6 +438,7 @@ button {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 60px;
+  width: 790px;
 }
   .row::before, .row::after {
     content: ' ';

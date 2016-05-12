@@ -19,7 +19,8 @@
     navigator.getMedia = ( navigator.getUserMedia ||
                            navigator.webkitGetUserMedia ||
                            navigator.mozGetUserMedia ||
-                           navigator.msGetUserMedia);
+                           navigator.msGetUserMedia ||
+                           navigator.mediaDevices.getUserMedia);
 
     navigator.getMedia(
       {
@@ -38,6 +39,7 @@
       },
       function(err) {
         console.log("An error occured! " + err);
+        alert("Browser does not support this webpage. Open in Mozilla Firefox.");
       }
     );
 
