@@ -7,7 +7,6 @@
         <title>Spirit Selfie</title>
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <!-- <script language="javascript" type="text/javascript" src="libraries/p5.js"></script> -->
         <style>
           #images {
@@ -29,8 +28,8 @@
       <h1>#Spirit Camera</h1>
       <!-- <h2 class="subheader"></h2> -->
       <p>
-      Capture the spirits around you.<br/>
-      This page only works on Mozilla Firefox.
+      Bloody Mess Course Project - Spirit Photography: capture the spirits around you.<br/>
+      <b>Please use Mozilla Firefox Browser!</b> Otherwise, the camera will not work.
       </p>
     </div>
   </div>
@@ -49,18 +48,39 @@
     </div>
   </div>
 
-  <footer><div class="row column text-center">vicosmic.github.com</div></footer>
+  <footer><div class="row column text-center">vicosmic.github.com/spirit-camera</div></footer>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script> -->
+  <script src="js/crossbrowser.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <!-- <script language="javascript"
+  type="text/javascript" src="sketch.js"></script> -->
   <script type="text/javascript">
     $(document).ready(function(){
-      var images = ['ghost01','ghost02','ghost03','ghost04','ghost05'];
+      var images = ['ghost03','ghost04'];
       $("#images").css("background-image", "url(img/filters/" + images[Math.floor(Math.random() * images.length)] + ".png)");
     });
+
+      $(document).ready(function(){
+        /* Get browser */
+        $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+        /* Detect Chrome */
+        if($.browser.chrome){
+            /* Do something for Chrome at this point */
+            alert("Browser does not support this webpage. Open in Mozilla Firefox.");
+            /* Finally, if it is Chrome then jQuery thinks it's
+               Safari so we have to tell it isn't */
+            $.browser.safari = false;
+        }
+        /* Detect Safari */
+        if($.browser.safari){
+            /* Do something for Safari */
+            alert("Browser does not support this webpage. Open in Mozilla Firefox.");
+        }
+      });
+
   </script>
 </body>
 
